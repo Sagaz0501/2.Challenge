@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+html {
+  font-size: 52.6%;
+  overflow-x: hidden;
+}
+
+body {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background-color: purple;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 180px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 3fr 2fr;
+  text-align: center;
+}
+header h1 {
+  align-self: flex-end;
+  justify-self: center;
+  width: 80%;
+  color: #FFFFFF;
+  font-size: 3.5rem;
+}
+header p {
+  align-self: center;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  width: 70%;
+  justify-self: center;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+main .Contenedor-general {
+  width: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(212, 35, 174);
+  display: grid;
+  border-radius: 20px;
+}
+main .Contenedor-general .Contendor-nombre-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .Contenedor-general .Contendor-nombre-info .Nombre-seccion {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  width: 95%;
+  margin: 0 auto;
+}
+main .Contenedor-general .Contendor-nombre-info .div-parrafo {
+  width: 95%;
+  height: 50px;
+  color: #CDD5E0;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+}
+main .Contenedor-general .Contendor-nombre-info .div-parrafo p {
+  padding: 10px;
+  font-size: 15px;
+}
+main .Contenedor-general .Contendor-nombre-info .div-parrafo .font-negro {
+  color: black;
+}
+main .Contenedor-general .Contendor-nombre-info .div-parrafo .flecha {
+  background-image: url(/ContactPage/dccl--responsive-contact-page/Expand_down.svg);
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+main .Contenedor-general .Contendor-nombre-info .contenedor-grande {
+  height: 200px;
+  display: flex;
+  align-items: self-start;
+}
+main .Contenedor-general .boton-final {
+  width: 95%;
+  height: 50px;
+  background-color: #FFFFFF;
+  justify-self: center;
+  align-self: flex-start;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4036A9;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 760px) {
+  header {
+    width: 100%;
+    height: 180px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 4fr 3fr;
+    text-align: center;
+  }
+  header h1 {
+    align-self: flex-end;
+    justify-self: center;
+    width: 70%;
+    color: #FFFFFF;
+    font-size: 5rem;
+  }
+  header p {
+    align-self: center;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    width: 60%;
+    justify-self: center;
+  }
+  .Contenedor-general {
+    max-width: 700px;
+    max-height: 900px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 20px;
+  }
+  .Contenedor-general .Contendor-nombre-info {
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .Contenedor-general .font-gris {
+    width: 95%;
+  }
+  .Contenedor-general .contenedor-gigante {
+    grid-area: 3/1/3/3;
+    align-self: center;
+    margin-left: 0px;
+  }
+  .Contenedor-general .boton-final {
+    grid-area: 4/1/4/3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
